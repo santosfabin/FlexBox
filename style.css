@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	overflow: hidden;
+}
+.menu{
+	display: flex;
+	height: 50px;
+	width: 100vw;
+	background: red;
+	flex-direction: row; /*padrão*/
+	justify-content: space-between;
+	align-items: center;
+}
+.margem{
+	margin: 10px;
+	gap: 10px;
+}
+div span{
+	color: white;
+}
+.blocks{
+	display: flex;
+	margin: 10px;
+	justify-content: space-between;
+}
+div div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pai:not(.nao){
+	display: flex;
+	width: 40vw;
+	border: 1px solid blue;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+}
+.outropai{
+	display: flex;
+	width: 40vw;
+	border: 1px solid blue;
+	padding: 5px;
+	justify-content: space-around;
+}
+.element{
+	flex-grow: 1;
+	flex-shrink: 0;
+	width: 50px;
+	height: 50px;
+	max-width: 50px;
+	max-height: 50px;
+	border: 1px solid black;
+}
+.flex-direction{
+	flex-direction: row-reverse;
+}
+.pri{
+	flex-direction: column;
+}
+.seg{
+	flex-direction: column-reverse;
+}
+.quebrado{
+	flex-wrap: nowrap;
+}
+.naoquebrado{
+	flex-wrap: wrap;
+}
+.naoquebrado1{
+	flex-wrap: wrap-reverse;
+}
+
+
+.orange{
+	background: orange;
+}
+.red{
+	background: red;
+}
+.yellow{
+	background: yellow;
+}
